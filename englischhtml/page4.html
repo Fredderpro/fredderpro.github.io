@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Identification - Page 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Is this Website Showing Fake News?</h1>
+
+        <div class="screenshot-card">
+            <img src="C:\Users\ferck\Desktop\englischhtml\bild4.png" alt="Website Screenshot 2">
+            <input type="hidden" id="correctAnswer" value="false"> <!-- Set to 'true' for Fake News, 'false' for Not Fake News -->
+
+            <div class="buttons">
+                <button onclick="checkAnswer(true, this)" class="btn fake">Fake News</button>
+                <button onclick="checkAnswer(false, this)" class="btn not-fake">Not Fake News</button>
+            </div>
+        </div>
+
+        <!-- Navigation buttons: Previous and Next -->
+        <div class="navigation">
+            <button onclick="goToPreviousPage(3)" class="btn previous">Previous</button> <!-- Update with previous page number -->
+            <button id="nextButton" onclick="goToNextPage(5)" class="btn next" disabled>Next</button>
+        </div>
+    </div>
+</body>
+</html>
